@@ -44,7 +44,7 @@ function showWaning (warning) {
 
 // a function to do a animated background
 function changeBg() {
-    c('body').style.background = `url("midia/bg${1 + Math.floor(Math.random() * 4)}.jpg")`;
+    c('body').style.background = `url("midia/bg${1 + Math.floor(Math.random() * 3)}.jpg")`;
     c('body').style.backgroundSize = 'cover';
     c('body').style.backgroundRepeat = 'no-repeat';
     c('body').style.backgroundPosition = 'center';
