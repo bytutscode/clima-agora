@@ -51,4 +51,9 @@ function changeBg() {
     c('img').style.objectFit = "cover";
 }
 
+c('body').style.background = `url("midia/bg1.jpg")`;
+c('body').style.background = `url("midia/bg2.jpg")`;
+c('body').style.background = `url("midia/bg3.jpg")`;
+c('body').style.background = `url("midia/bg4.jpg")`;
+
 setInterval(changeBg,8000);
