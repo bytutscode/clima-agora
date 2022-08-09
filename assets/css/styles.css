@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --bg-color:rgb(11, 49, 99);
+    --header-color:rgb(255, 255, 255);
+}
+*,*::after,*::before {
+    padding: 0;
+    font-family: 'Bebas Neue';
+    text-shadow: 0px 0px 1px #0b84e7b0;
+    font-weight: normal;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background: url('../../midia/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s all ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--header-color);
+    text-shadow: 1px 1px 3px black;
+}
+
+header .logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+header .logo img {
+    width: 100%;
+}
+
+
+section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+}
+
+.search {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+}
+
+.search input {
+    height: 40px;
+    width: 300px;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.411);
+}
+.search button {
+    height: 40px;
+    outline: none;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    border: 0;
+    background-color: rgb(11, 22, 71);
+}
+
+.shower {
+    display: none;
+    justify-content: center;
+}
+
+.info {
+    border: 1px solid rgb(126, 126, 126);
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.info .city {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.add-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 19px;
+}
+.Temp {
+    display: flex;
+    padding: 5px;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.desi {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-data {
+    font-size: 30px;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.temperature {
+    margin-left: -15px;
+}
+
+.icons {
+    width: 60px;
+    margin-left: 15px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+.icons img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.temp-img {
+    display: flex;
+}
+.temp-img img {
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 60px;
+}
+.wild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wild-direction {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.pointer {
+    width: 23px;
+    margin-left: 23px;
+    transform-origin: left;
+    background-color: red;
+    height: 2px;
+    transform: rotate(-90deg);
+}
+
+.warning {
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+
+@media (max-width:680px) {
+    .icons img {
+        width: 70%;
+    }
+    .temp-img img {
+        width: 42px;
+        margin-left:5px;
+    }
+    .icons {
+        margin-left: 0px;
+    }
+    .temp-data {
+        font-size: 22px;
+    }
+    .wild-direction {
+        width: 42px;
+        height: 42px;
+    }
+    .pointer {
+        width: 100%;
+    }
+    .search input {
+        width: 200px;
+    }
+    .search button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:550px) {
+    .add-info {
+        flex-direction: column;
+    }
+    .wild {
+        margin-left: -11px;
+    }
+    .desi {
+        width: 100%;
+        justify-content: start;
+    }
+    .Temp {
+        width: 100%;
+    }
+    .Temp:first-child {
+        border-bottom: 1px solid black;
+    }
+}
