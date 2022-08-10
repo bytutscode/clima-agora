@@ -206,6 +206,7 @@ form {
 
 .wild-direction {
     width: 60px;
+    padding: 3px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -215,8 +216,8 @@ form {
 }
 
 .pointer {
-    width: 23px;
-    margin-left: 23px;
+    width: 47%;
+    margin-left: 50%;
     transform-origin: left;
     background-color: red;
     height: 2px;
