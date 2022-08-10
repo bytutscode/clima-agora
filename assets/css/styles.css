@@ -223,6 +223,14 @@ form {
     height: 2px;
     transform: rotate(-90deg);
 }
+.wild-direction::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
 
 .warning {
     display: flex;
