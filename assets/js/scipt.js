@@ -42,14 +42,17 @@ function showWaning (warning) {
     document.querySelector('.warning').innerHTML = warning;
 }
 
-// a function to do a animated background
-function changeBg() {
-    c('body').style.background = `url("midia/bg${1 + Math.floor(Math.random() * 3)}.jpg")`;
-    c('body').style.backgroundSize = 'cover';
-    c('body').style.backgroundRepeat = 'no-repeat';
-    c('body').style.backgroundPosition = 'center';
-    c('img').style.objectFit = "cover";
+// function to change the BG
+let currentBg = 1;
+let bgs = document.querySelectorAll('.bg').length;
+function changeBg () {
+    let newBG = Math.floor(Math.random() * bgs);
+    while(newBG == currentBg){
+      newBG = Math.floor(Math.random() * bgs);
+    };
+    currentBg = newBG;
+    document.querySelector('.bg.actived').classList.remove('actived');
+    document.querySelectorAll('.bg')[currentBg].classList.add('actived');
+    
 }
-
-
-setInterval(changeBg,8000);
+setInterval(changeBg,10000);
