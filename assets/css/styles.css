@@ -13,14 +13,38 @@
 }
 
 body {
-    background: url('../../midia/bg3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 1s all ease;
     height: 100vh;
+    background-color: rgba(13, 108, 172, 0.979);
     display: flex;
     flex-direction: column;
+}
+.backgrounds {
+    width: 100%;
+    position: absolute;
+    z-index: -4;
+    height: inherit;
+}
+
+.backgrounds .bg {
+    width: 100%;
+    position: absolute;
+    z-index: -6;
+    opacity: 0;
+    object-fit: cover;
+    transition: all 5s ease-in-out;
+    height: 100%;
+}
+
+
+.backgrounds .bg img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .bg.actived {
+    opacity: 1;
 }
 
 header {
