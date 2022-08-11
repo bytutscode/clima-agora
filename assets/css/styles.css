@@ -311,4 +311,6 @@ footer a:hover {
     .Temp:first-child {
         border-bottom: 1px solid black;
     }
+    .search {
+        width:135px;}
 }
